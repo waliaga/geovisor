@@ -36,15 +36,3 @@ df = pd.DataFrame(data['unodc_parcelas'])
 st.map(df)
 
 
-"""
-# Selecciona únicamente las columnas de latitud y longitud si están presentes
-if 'latitud_y' in df.columns and 'longitud_x' in df.columns:
-    df = df[['latitud_y', 'longitud_x']]
-    # Renombra columnas para que sean compatibles con st.map()
-    df.columns = ['lat', 'lon']
-    
-    # Crea un mapa con los datos
-    st.map(df)
-else:
-    st.write("Las columnas 'latitud_y' y 'longitud_x' no están presentes en el DataFrame.")
-"""
